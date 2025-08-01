@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Fantasy League</title>
-  <link rel="stylesheet" href="style1.css">
+  <title>Fantasy PRS League</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to My Roblox Fantasy League</h1>
-  <p>Select your team, track your stats, and rise to the top!</p>
+  <header>
+    <h1>Fantasy PRS League</h1>
+    <nav>
+      <button onclick="showTab('leaderboard')">🏆 Leaderboard</button>
+      <button onclick="showTab('team')">🧠 Team Selection</button>
+      <button onclick="showTab('pool')">📋 Player Pool</button>
+    </nav>
+  </header>
 
-  <h2>Leaderboard</h2>
-  <ul id="leaderboard">
-    <li>Player1 – 45 pts</li>
-    <li>Player2 – 30 pts</li>
-    <li>Player3 – 27 pts</li>
-  </ul>
+  <main>
+    <section id="leaderboard" class="tab active">
+      <h2>Leaderboard</h2>
+      <ul>
+        <li>Player1 - 50 pts</li>
+        <li>Player2 - 42 pts</li>
+        <li>Player3 - 35 pts</li>
+      </ul>
+    </section>
+
+    <section id="team" class="tab">
+      <h2>Your Fantasy Team</h2>
+      <p>Select your squad (coming soon...)</p>
+    </section>
+
+    <section id="pool" class="tab">
+      <h2>Player Pool</h2>
+      <ul>
+        <li>Striker - 10 pts</li>
+        <li>Midfielder - 8 pts</li>
+        <li>Goalkeeper - 12 pts</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
